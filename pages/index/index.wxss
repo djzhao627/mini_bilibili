@@ -1,0 +1,87 @@
+page {
+  color: #666;
+  padding: 10rpx;
+}
+
+/* 首页导航 */
+.nav_wrap {}
+
+.nav {
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+
+.nav_item {
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+
+.nav_item.active {
+  border-bottom: 5rpx solid #de688b;
+}
+
+/* 轮播图 */
+
+.slides {
+  margin-top: 10rpx;}
+
+.slides swiper {
+  height: 220rpx;
+}
+
+.slides navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.slides image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 视频列表 */
+
+.vide_wrap {
+  display: flex;
+  /* 换行 */
+  flex-wrap: wrap;
+  padding: 5rpx;
+  /* 对其方式:先使用两边,再平分中间 */
+  justify-content: space-between;
+}
+
+.video_item {
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+
+.video_img{
+  position: relative;
+}
+
+.video_img image {
+  width: 100%;
+  border-radius: 15rpx;
+}
+
+.video_img .video_info {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 24rpx;
+}
+.video_title{
+  font-size: 28rpx;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

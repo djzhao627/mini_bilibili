@@ -1,0 +1,54 @@
+.my_title {
+    /* 伸缩盒子 */
+    display: flex;
+    /* 垂直居中 */
+    align-items: center;
+    padding: 10rpx;
+    background-color: #fff;
+}
+
+.logo {
+    flex: 7;
+}
+
+.logo_img {
+    width: 140rpx;
+    height: 60rpx;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+.search_img {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.user {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_img {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.down_app {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}

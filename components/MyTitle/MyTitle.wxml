@@ -1,0 +1,19 @@
+<view class="my_title" hover-class="none" hover-stop-propagation="false">
+    <!-- logo -->
+    <navigator class="logo" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <image class="logo_img" src="../../icons/logo.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </navigator>
+    <!-- 搜索 -->
+    <view class="search" hover-class="none" hover-stop-propagation="false">
+        <image class="search_img" src="../../icons/search.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <!-- 用户头像 -->
+    <view class="user" hover-class="none" hover-stop-propagation="false">
+        <image class="user_img" src="../../icons/user.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <!-- 下载按钮 -->
+    <view class="down_app">
+        下载 APP
+    </view>
+</view>
+  

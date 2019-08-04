@@ -1,0 +1,72 @@
+<view class="detail">
+    <!-- 公共头部 -->
+    <MyTitle />
+    <!-- 视频详情 -->
+    <view class="video_info">
+        <!-- 播放视频 -->
+        <video src="{{videoInfo.videoSrc}}"></video>
+        <!-- 视频标题 -->
+        <view class="video_title">
+            <text>{{videoInfo.videoTitle}}</text>
+            <text class="fa fa-angle-down"></text>
+        </view>
+        <!-- 视频详情 -->
+        <view class="video_detail">
+            <!-- 作者 -->
+            <text class="author">{{videoInfo.author}}</text>
+            <!-- 观看数 -->
+            <text class="play_count">{{videoInfo.playCount}}</text>
+            <!-- 弹幕数 -->
+            <text class="comment_count">{{videoInfo.commentCount}}弹幕</text>
+            <!-- 时间 -->
+            <text class="video_date">{{videoInfo.date}}</text>
+        </view>
+    </view>
+    <!-- 推荐视频 -->
+    <view class="other_video_list">
+        <navigator class="item" wx:for="{{otherVideoList}}" wx:key="{{index}}">
+            <!-- 图片 -->
+            <image mode="widthFix" src="{{item.imgSrc}}" />
+            <!-- 介绍 -->
+            <view class="other_info">
+                <!-- 标题 -->
+                <view class="other_title">{{item.title}}</view>
+                <!-- 其他 -->
+                <view class="other_detail">
+                    <!-- 观看数 -->
+                    <text class="other_play_count">{{item.playMsg}}观看</text>
+                    <!-- 评论数 -->
+                    <text class="other_comment_count">{{item.commentCount}}弹幕</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <!-- 评论列表 -->
+    <view class="comment_wrap">
+        <!-- 评论总数 -->
+        <view class="comment_total_num">
+            评论({{commentData.commentTotalCount}})
+        </view>
+        <!-- 评论列表 -->
+        <view class="comment_list">
+            <view class="comment_item" wx:for="{{commentData.commentList}}" wx:key="{{index}}">
+                <!-- 用户头像 -->
+                <view class="user_icon">
+                    <image mode="widthFix" src="{{item.userIconSrc}}" />
+                </view>
+                <!-- 评论信息 -->
+                <view class="comment_item_info">
+                    <!-- 用户信息 -->
+                    <view class="user_info">
+                        <text class="comment_author">{{item.username}}</text>
+                        <text class="comment_date">{{item.commentDate}}</text>
+                    </view>
+                    <!-- 评论内容 -->
+                    <view class="comment_content">
+                        {{item.commentInfo}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
